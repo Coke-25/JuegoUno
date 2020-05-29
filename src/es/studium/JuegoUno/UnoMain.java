@@ -8,9 +8,10 @@ public class UnoMain
 {
 	public static void main(String[] args)
 	{
-		UnoVistaMenu vista = new UnoVistaMenu(0,false);
+		UnoVistaMenu vistaMenu = new UnoVistaMenu();
+		UnoVistaJuego vistaJuego = new UnoVistaJuego();
 		UnoModelo modelo = new UnoModelo();
 		
-		new UnoControlador(modelo, vista);
+		new UnoControlador(modelo, vistaMenu, vistaJuego);
 	}
 }
